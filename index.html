@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>exercise01.sqlite Brief Analysis</title>
+  </head>
+  <body>
+  	<main>
+  		<div class="m-0">
+  			<div class="sample-data">
+  				<h3 class="">sample entries from flattened_records</h3>
+  				<table border="1" class="dataframe">
+				  <thead>
+				    <tr style="text-align: right;">
+				      <th></th>
+				      <th>id</th>
+				      <th>age</th>
+				      <th>workclass</th>
+				      <th>education_level</th>
+				      <th>education_num</th>
+				      <th>marital_status</th>
+				      <th>occupation</th>
+				      <th>relationship</th>
+				      <th>race</th>
+				      <th>sex</th>
+				      <th>capital_gain</th>
+				      <th>capital_loss</th>
+				      <th>hours_week</th>
+				      <th>country</th>
+				      <th>over_50k</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <th>0</th>
+				      <td>1</td>
+				      <td>39</td>
+				      <td>State-gov</td>
+				      <td>Bachelors</td>
+				      <td>13</td>
+				      <td>Never-married</td>
+				      <td>Adm-clerical</td>
+				      <td>Not-in-family</td>
+				      <td>White</td>
+				      <td>Male</td>
+				      <td>2174</td>
+				      <td>0</td>
+				      <td>40</td>
+				      <td>United-States</td>
+				      <td>0</td>
+				    </tr>
+				    <tr>
+				      <th>1</th>
+				      <td>2</td>
+				      <td>50</td>
+				      <td>Self-emp-not-inc</td>
+				      <td>Bachelors</td>
+				      <td>13</td>
+				      <td>Married-civ-spouse</td>
+				      <td>Exec-managerial</td>
+				      <td>Husband</td>
+				      <td>White</td>
+				      <td>Male</td>
+				      <td>0</td>
+				      <td>0</td>
+				      <td>13</td>
+				      <td>United-States</td>
+				      <td>0</td>
+				    </tr>
+				  </tbody>
+				</table>
+				<br>
+				<a href="flattened_records.csv" style="font-weight: 800; color: black;" download>click here to download the full dataset</a>
+  			</div>
+  			<div class="percentage-workclass">
+  				<h3>percentage of workers by work class</h3>
+  				<table border="1" class="dataframe">
+				  <thead>
+				    <tr style="text-align: right;">
+				      <th></th>
+				      <th>workclass</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <th>Private</th>
+				      <td>0.694198</td>
+				    </tr>
+				    <tr>
+				      <th>Self-emp-not-inc</th>
+				      <td>0.079071</td>
+				    </tr>
+				    <tr>
+				      <th>Local-gov</th>
+				      <td>0.064207</td>
+				    </tr>
+				    <tr>
+				      <th>?</th>
+				      <td>0.057307</td>
+				    </tr>
+				    <tr>
+				      <th>State-gov</th>
+				      <td>0.040559</td>
+				    </tr>
+				    <tr>
+				      <th>Self-emp-inc</th>
+				      <td>0.034704</td>
+				    </tr>
+				    <tr>
+				      <th>Federal-gov</th>
+				      <td>0.029319</td>
+				    </tr>
+				    <tr>
+				      <th>Without-pay</th>
+				      <td>0.000430</td>
+				    </tr>
+				    <tr>
+				      <th>Never-worked</th>
+				      <td>0.000205</td>
+				    </tr>
+				  </tbody>
+				</table>
+  			</div>
+  			<div class="over50k-stats" style="display: grid; grid-template-columns: 1fr 1fr 1fr;">
+  				<div class="percentage-over50k">
+  				<h3>percentage of workers earning over 50k</h3>
+  				<table border="1" class="dataframe">
+				  <thead>
+				    <tr style="text-align: right;">
+				      <th></th>
+				      <th>over_50k</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <th>0</th>
+				      <td>0.760718</td>
+				    </tr>
+				    <tr>
+				      <th>1</th>
+				      <td>0.239282</td>
+				    </tr>
+				  </tbody>
+				</table>
+  				</div>
+  				<div class="over50k-age">
+  					<h3>average age of earners over 50k</h3>
+  					<p>44.275177547702576 yrs. old</p>
+  				</div>
+  				<div class="over50k-education">
+  					<h3>average education level of earners over 50k</h3>
+  					<table>11.602806537178061</table>
+  				</div>
+  			</div>
+  			<div class="over50k-plot">
+  				<h3>fig 1.0</h3>
+  				<img src="eduPlot.png">
+  			</div>
+  		</div>
+  	</main>
+  </body>
+</html>
